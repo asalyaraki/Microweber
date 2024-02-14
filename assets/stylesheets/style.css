@@ -1,0 +1,478 @@
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+
+main {
+    width: 100%;
+
+    /* overflow-x: hidden; */
+    .menu {
+        position: relative;
+
+        &:hover {
+            >div {
+                width: 100%;
+            }
+
+            >a {
+                color: rgb(190, 190, 190);
+            }
+        }
+
+        >div {
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: rgb(190, 190, 190);
+            bottom: 0;
+            left: 0;
+            transition: .4s;
+
+
+
+        }
+
+        >a {
+            transition: .4s;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+    }
+
+    .bgl {
+        &:hover {
+            background-image: linear-gradient(90deg, crimson 60%, orange);
+        }
+    }
+
+    .bg_motto {
+        background-image: url(../img/icons_designso.webp);
+        /* height: 100vh; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(204, 103, 123);
+        box-shadow: inset 1000px 1000px rgba(0, 0, 0, 0.658);
+    }
+
+    .motto {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 100px;
+
+        @media screen and (max-width:992px) {
+            font-size: 60px;
+
+        }
+    }
+
+    .tbgl {
+        color: transparent !important;
+        background-clip: text;
+        background-clip: -webkit-text;
+        background-image: linear-gradient(140deg,rgb(0, 119, 255) 20%, rgb(247, 149, 166) 30%, rgb(161, 0, 161)) !important;
+        z-index: 1;
+    }
+    .orange{
+        background-color: rgb(255, 123, 46);
+    }
+    .way{
+        font-size: 70px;
+        @media screen and (max-width:992px) {
+            font-size: 30px;
+
+        }
+
+    }
+    .bgo{
+        background-color: orangered;
+        transition: .2s;
+        &:hover {
+            background-image: linear-gradient(90deg, crimson 60%, orange);
+            border: 1px solid white;
+        }
+
+    }
+
+    .vid{
+        position: relative;
+        span{
+            
+            
+            position: absolute;
+            border-start-start-radius: 5px;
+            border-start-end-radius: 5px;
+            &:first-of-type{
+                /* border: 2px solid red; */
+                width: 80%;
+                top: -25px;
+                left: 10%;
+                height: 25px;
+                background-color: rgba(255, 255, 255, 0.253);
+                /* z-index: -1; */
+            }
+            &:last-of-type{
+                /* border: 2px solid blue; */
+                width: 90%;
+                top: -15px;
+                left: 5%;
+                height: 16px;
+                background-color: rgba(255, 255, 255, 0.253);
+            }
+            
+
+
+        }
+        video{
+            border-radius: 5px;
+        }
+        
+       
+    }
+    
+
+    .designed{
+        font-size: 50px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        @media screen and (max-width:992px) {
+            font-size: 30px;
+            
+        }
+    }
+    .speed{
+       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .create{
+        &:hover {
+            background-image: linear-gradient(90deg, crimson 60%, orange);
+            border: 1px solid white;
+        }
+    }
+
+    .nmd{
+        position: relative;
+        >span{
+            position: absolute;
+            top: 80%;
+        }
+        >p{
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+    }
+
+    .bdrs{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .line{
+        width: 300px;
+        height: 2px;
+        background-color: white;
+        
+    }
+    .lines{
+        font-size: 30px;
+        @media screen and (max-width:992px) {
+            font-size: 20px;
+
+            
+        }
+    }
+    .easy{
+        font-size: 100px;
+        @media screen and (max-width:768px) {
+            font-size: 30px;
+            
+        }
+        @media screen and (min-width:769px) and (max-width:992px) {
+            font-size: 60px;
+            
+        }
+
+    }
+
+    .list1{
+        font-size: 40px;
+        color: blueviolet;
+        @media screen and (max-width:992px) {
+            font-size: 16px;
+            border: 1px solid blueviolet;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 5px 10px;
+        }
+        >div{
+            width: 95%;
+            height: 3px;
+            background-color: blueviolet;
+        }
+        
+    }
+
+    .list{
+        transition: .4s;
+        font-size: 40px;
+        @media screen and (max-width:992px) {
+            font-size: 16px;
+            border: 1px solid white;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 5px 10px;
+            &:hover{
+                border: 1px solid blueviolet;
+            }
+        }
+        >div{
+            width: 0;
+            height: 3px;
+            background-color: blueviolet;
+            transition: .4s;
+        }
+       
+        &:hover{
+            color: blueviolet;
+          
+        }
+    }
+    .list2{
+        &:hover{
+            >div{
+                width: 70%;
+            }
+        }
+       
+    }
+    .list3{
+        &:hover{
+            >div{
+                width: 40%;
+            }
+        }
+       
+    }
+    .list4{
+        &:hover{
+            >div{
+                width: 43%;
+            }
+        }
+        
+    }
+    .list5{
+        &:hover{
+            >div{
+                width: 53%;
+            }
+        }
+      
+    }
+
+    .pink{
+        font-size: 60px;
+        @media screen and (max-width:768px) {
+            font-size: 20px;
+            
+        }
+        @media screen and (min-width:769px) and (max-width:992px) {
+            font-size: 40px;
+            
+        }
+    }
+
+    .MICROWEBER{
+        background-color: rgb(255, 234, 238);
+    }
+
+    
+    
+    .EXPERIENCE{
+        
+        color: rgb(212, 80, 102);
+    }
+
+    .build{
+        background-color: rgb(212, 80, 102);
+        &:hover{
+            background-image: linear-gradient(90deg, crimson 60%, orange);
+
+        }
+    }
+
+    .purp{
+        background-image: url(../img/shopbg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        @media screen and (max-width:992px) {
+          box-shadow: inset 2000px 2000px rgba(0, 0, 0, 0.616);
+            
+        }
+
+       
+    }
+
+    .open{
+        font-size: 60px;
+        @media screen and (max-width:992px) {
+            font-size: 30px;
+            color: white;
+            
+        }
+    }
+
+    .store{
+        background-color: purple;
+        &:hover{
+            background-image: linear-gradient(90deg, crimson 60%, orange);
+            border: 1px solid white;
+        }
+    }
+    .tc{
+        @media screen and (max-width:992px) {
+            
+            color: white;
+            
+        }
+    }
+
+    .website{
+        font-size: 70px;
+        @media screen and (max-width:768px) {
+            font-size: 30px;
+            
+        }
+        @media screen and (min-width:769px) and (max-width:992px) {
+            font-size: 50px;
+            
+        }
+    }
+
+    .sport{
+        border-radius: 20px;
+        transition: .2s;
+        &:hover{
+            background-color: rgb(58, 58, 58) !important;
+        }
+    }
+
+    .hov{
+        &:hover{
+            background-image: linear-gradient(90deg, crimson 60%, orange);
+            border: 1px solid white;
+        }
+    }
+
+    .bgg{
+        background-color: rgb(76, 204, 155);
+    }
+
+    .like{
+        font-size: 60px;
+        @media screen and (max-width:992px) {
+            
+            font-size: 30px;
+            
+        }
+    }
+
+    .bigpic{
+        @media screen and (max-width:992px) {
+           
+        }
+
+    }
+
+    .footer_border{
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.212);
+       
+    }
+
+    .fbg{
+        background-color: rgb(178, 233, 255);
+        
+    }
+
+    .fp{
+        overflow: hidden;
+        
+        >img{
+           width: 200%;
+           
+        }
+    }
+
+    .footer_bold{
+        font-size: 60px;
+        @media screen and (max-width:1200px) {
+            font-size: 40px;
+            
+        }
+        
+        
+    }
+    .mail{
+        >a{
+            font-size: 20px;
+            transition: .4s;
+            color: black;
+            &:hover{
+                letter-spacing: 2px;
+                color: blue;
+            }
+        }
+    }
+
+    .icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        transition: .4s;
+        &:hover{
+            transform: scale(1.2);
+            border: 1px solid blue;
+            >a{
+                color: blue;
+            }
+        }
+        >a{
+            transform: scale(1.5);
+            color: black;
+            transition: .4s;
+        }
+    }
+    
+
+
+    
+
+    
+        
+        
+    
+    }
